@@ -1,0 +1,107 @@
+main div{
+    text-align: center;
+    font-size: xx-large;
+    color: aliceblue;
+}
+body{
+    height: auto;
+}
+#quote{
+   font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+#membership{
+    display: block;
+    position: relative;
+    left: 5%;
+    top: 20%;
+    width: 30%;
+    text-align: left;
+    margin-top: 3%;
+    
+}
+#h1Membership{
+    font-size: 150%;
+    margin-left: 25%;
+    text-align: left;
+}
+#pictureOfGym{
+    display: block;
+    position: relative;
+    left: 3%;
+    top: 20%;
+    height: fit-content;
+    width: 30%;
+}
+#gymPic{
+    height: 800px;
+}
+#plans{
+    display: block;
+    position: relative;
+    margin-top: -70%;
+    right: -50%;
+    width: 50%;
+    text-align: left;
+}
+.plan{
+    margin-top: -10%;
+    margin-bottom: 20%;
+    text-align: left;
+
+}
+.planHeading{
+    margin-bottom: -5%;
+}
+.paraPlan{
+    font-size: 20px;
+}
+h2{
+    font-size: 90%;
+    text-align: left;
+}
+#visit{
+    width: 30%;
+    display: block;
+    position: relative;
+    margin-top: 1%;
+    left: 5%;
+    text-align: left;
+    
+}
+
+#map{
+    
+    width: 50%;
+    display: block;
+    position: relative;
+    left: 45%;
+    top:20%;
+    margin-top: -30%;
+    margin-bottom: 20px;
+
+}
+/*****************************************
+hr.style-seven {
+    overflow: visible; /* For IE */
+  /*  height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr.style-seven:before { 
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}*/ 
+/****************************************************/

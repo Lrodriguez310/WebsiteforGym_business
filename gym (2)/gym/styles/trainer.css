@@ -1,0 +1,87 @@
+main div{
+    text-align: center;
+    font-size: xx-large;
+    color: aliceblue;
+}
+body{
+    height: fit-content;
+}
+ /* Three columns side by side */
+ .columns {
+    float: left;
+    width: 20%;
+    display: block;
+    margin-bottom: 20px;
+    padding: 0 40px;
+    margin: 40px;
+  }
+  li::before {
+    content: "~ "; /* Insert content that looks like bullets /
+    padding-right: 8px;
+    color: blue; / Or a color you prefer */
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  h2{
+    font-size: 20px;
+  }
+  /* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 4px 8px 0 gray;
+  }
+  
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 8px;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    font-size: 20px;
+    color: white;
+  }
+  .information{
+    font-size: 5px;
+  }
+  .qualifications{
+    font-size: 15px;
+    text-align: left;
+  }
+  
+  .button {
+    border: 1px solid white;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  } 
+  #quote{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+  }
+  .email{
+    font-size: 15px;
+  }

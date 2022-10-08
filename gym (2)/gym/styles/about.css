@@ -1,0 +1,89 @@
+@font-face {
+        font-family: 'lobster';
+        src: url('../fonts/Lobster/Lobster-Regular.ttf');
+        format: ('TrueType')
+}
+main div{
+    text-align: center;
+    font-size: xx-large;
+    color: aliceblue;
+}
+body{
+    height: auto;
+}
+#quote{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+.about p:first-of-type::first-letter {
+     float: left;
+    font-size: 4em;
+    font-family: 'lobster';
+    line-height: 0.8em;
+    margin-right: 0.1em;
+    padding: 0.1em;
+    padding-bottom: 0.2em;
+}
+.about p:first-of-type::first-line {
+    font-variant: small-caps;
+    font-size: 1.3em;
+}
+.about p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: left;
+	margin-right:5%;
+    margin-top: 4%;
+    line-height: 150%;
+}
+#gympic{
+    margin: 15px;
+    height: 10em;
+    float: left;
+    clear: left;
+}
+#equipment{
+    width: 100%;
+    height: 400px;
+    background-color:white;
+    color: black;
+}
+li{
+    font-size: 20px;
+    color: black;
+    display: block;
+    margin-bottom: 8%;
+}
+li:before{
+    content: "→  ";
+}
+#h2E{
+    color: black;
+    margin-top: 20%;
+}
+#left_col_equip{
+    width: max-content;
+    margin-top: 7%;
+    text-align: left;
+
+}
+#right_col_equip{
+    width: max-content;
+    margin-top: 7%;
+    text-align: left;
+
+}
+.columns_equipment{
+    float: left;
+    width: 33.3%;
+    margin: 25px;
+}
+#imageBW_abt_equipment{
+    width: 1200px;
+    height: 350px;
+    
+}

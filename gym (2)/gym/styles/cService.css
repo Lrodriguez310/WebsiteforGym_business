@@ -1,0 +1,278 @@
+main div{
+    text-align: center;
+    font-size: xx-large;
+    color: aliceblue;
+}
+body{
+    height: auto;
+}
+#quote{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+#ImagesDiv {
+    width: 100%;
+    margin: 0 auto;
+}
+
+ul{
+    width: 80%;
+    margin: 5%;
+    list-style: none;
+    padding: 20px;
+    float: left;
+}
+
+li{
+    width: 20%;
+    float: left;
+    filter: sepia(0.8);
+    position: relative;
+    transition: linear 2s; 
+    transform-origin: -50px 20px;
+}
+
+
+li:nth-child(1) img{transform: translate(-10px, 20px) rotate(-10deg);}
+li:nth-child(2) img{transform: translate(-40px, 5px) rotate(10deg);}
+li:nth-child(3) img {transform: translate(-40px, 5px) rotate(-13deg);   }
+li:nth-child(4) img {transform: translate(-20px, 20px) rotate(5deg);    }
+li:nth-child(5) img {transform: translate(-30px, 50px) rotate(-10deg); }
+li:nth-child(6) img {transform: translate(-40px) rotate(5deg);   }
+li:nth-child(7) img {transform: translate(-40px, 5px) rotate(-13deg);   }
+li:nth-child(8) img {transform: translate(-30px, 50px) rotate(-10deg);   }
+li:nth-child(9) img {transform: translate(-40px, 5px) rotate(15deg);  }
+
+
+
+
+
+li:hover:nth-of-type(odd){
+    filter: sepia(0);
+    transform: scale(1.5) rotate(10deg);
+    transition: linear .5s; 
+    z-index: 1;
+}
+li:hover:nth-of-type(even){
+    filter: sepia(0);
+    transform: scale(1.5) rotate(0deg);
+    transition: linear .5s; 
+    z-index: 1;
+}
+
+.serviceImage{
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    width: 100%;
+    margin-left: 70%;
+}
+#communityServiceList li:hover{
+    transform: none;
+    transition: none;
+}
+#communityServiceList li{
+    font-size: 25px;
+
+}
+
+
+
+/************************************************************************
+body {
+
+    padding: 0;
+    box-sizing: border-box;
+    --line-offset: calc((10vh + 8px) / 2);
+}
+
+
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+    background: red;
+    object-fit: contain;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+}
+
+.tab {
+    width: calc(10vh + 8px);
+    height: calc(10vh + 8px);
+    position: relative;
+    display: flex;
+    margin-top: 10%;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
+    shape-outside: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
+    z-index: 0;
+    transition: width 0.5s;
+}
+
+.tab img {
+    width: 90%;
+    height: 90%;
+    z-index: 10;
+    cursor: pointer;
+    clip-path: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
+    shape-outside: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
+    transition: width 0.5s;
+}
+
+[type=radio] {
+    display: none;   
+}
+
+.preview-list {
+    background: linear-gradient(
+        #021919,
+        #021919 var(--line-offset),
+        #efefef var(--line-offset)
+    );
+}
+.tab {
+    background: linear-gradient(
+        #efefef,
+        #efefef var(--line-offset),
+        #021919 var(--line-offset)
+    );
+}
+
+[type=radio]:checked ~ label ~ .content{
+    text-align: center;
+    z-index: 8;
+}
+
+
+[type=radio]:checked ~ label .tab{
+    width: 0;
+}
+
+.content {
+    position: absolute;
+    background:red;
+    top:60% ;
+    left: 3%;
+    width: 100%;
+    height: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.content img {
+    height: 100%;
+    width: 100%; 
+    margin: auto;
+
+}
+
+/**************************************************************************
+This code was from the website
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --line-offset: calc((10vh + 8px) / 2);
+}
+
+
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+    background: #021919;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+}
+
+.tab {
+    width: calc(10vh + 8px);
+    height: calc(10vh + 8px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
+    shape-outside: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
+    z-index: 0;
+    transition: width 0.5s;
+}
+
+.tab img {
+    width: 10vh;
+    height: 10vh;
+    z-index: 10;
+    cursor: pointer;
+    clip-path: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
+    shape-outside: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
+    transition: width 0.5s;
+}
+
+[type=radio] {
+    display: none;   
+}
+
+.preview-list {
+    background: linear-gradient(
+        #021919,
+        #021919 var(--line-offset),
+        #efefef var(--line-offset)
+    );
+}
+
+.tab {
+    background: linear-gradient(
+        #efefef,
+        #efefef var(--line-offset),
+        #021919 var(--line-offset)
+    );
+}
+
+[type=radio]:checked ~ label ~ .content{
+    text-align: center;
+    z-index: 8;
+}
+
+
+[type=radio]:checked ~ label .tab{
+    width: 0;
+}
+
+.content {
+    position: absolute;
+    background: #021919;
+    top: 1vh;
+    left: 0;
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.content img {
+    height: auto;
+    width: 100vw;  
+}
